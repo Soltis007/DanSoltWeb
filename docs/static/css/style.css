@@ -37,7 +37,7 @@ header {
 
 h1 {
     color: #008080;
-    font-size: 3.5em; /* Increase font size */
+    font-size: 2.5em; /* Increase font size */
     font-weight: bold; /* Make the font bolder */
     text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* Optional: Adds a subtle shadow for depth */
     margin-top: 0px; /* Adjusts space above the text */
@@ -75,6 +75,31 @@ button {
 button:hover {
     background-color: #f0f0f0;
 }
+
+strong {
+    color: #3d965f; /* Set to your preferred color */
+    font-weight: bold; /* Ensures text is bold */
+}
+
+.welcome-container {
+    background: linear-gradient(to right, #fdfdfd, #dbffd9); /* Fancy gradient background */
+    padding: 20px; /* Spacing around the text */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center the text horizontally */
+    margin: 20px auto; /* Center the container on the page */
+    max-width: 60%; /* Maximum width of the container */
+    color: white; /* White text color */
+}
+
+
+
+
+
+.bold {
+    font-weight: bold;
+}
+
 .profile-img-container {
     background-color: #57bef3; /* Light grey background */
     border-radius: 10px; /* Rounded corners */
@@ -88,6 +113,18 @@ button:hover {
     height: auto; /* Maintain aspect ratio */
     border-radius: 8px; /* Smooth rounded corners for the image itself */
 }
+
+
+
+.logo {
+    position: absolute; /* Adjusts the positioning relative to its nearest positioned ancestor */
+    top: 10px; /* Distance from the top */
+    left: 10px; /* Distance from the left */
+    width: 100px; /* Adjust the width as necessary */
+    height: auto; /* Keeps the aspect ratio intact */
+}
+
+
 .background-section {
     background-color: rgba(255, 255, 255, 0.8); /* White background with opacity */
     border-radius: 15px; /* Rounded corners */

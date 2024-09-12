@@ -1,15 +1,46 @@
 <!DOCTYPE html>
-<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>About Me - Dan Soltis</title>
+    <link rel="stylesheet" href="../static/css/style.css">
 </head>
 <body>
-    <h1>About Us</h1>
-    <p>This is the about page.</p>
-    <a href="/">Go back to Home</a>
+    <header>
+       <div class="welcome-container">
+        <h1>About</h1>
+        </div> 
+    <img src="../static/images/logo.jpg" alt="DS Logo" class="logo"> 
+    <nav class="social-nav">
+        <!-- Navigation Links -->
+        <a href="../index.html" class="nav-icon">Home</a> <!-- Going up to the docs directory first -->
+        <a href="about.html" class="nav-icon">About</a> <!-- Same directory -->
+        <a href="../projects.html" class="nav-icon">Projects</a> <!-- Assuming projects.html is in the docs directory -->
+        <a href="../experience/exp.html" class="nav-icon">Experience</a>
+        <a href="../contact.html" class="nav-icon">Contact</a>
+    </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="about-section">
+            <h1>About Me</h1>
+            <p>I’m a proud graduate of the University of Maryland, College Park, where I earned my B.Sc in Information Science in 2023. Over the years, I’ve had the privilege of gaining hands-on experience in IT support, network management, and cybersecurity. Currently, I’m working as an IT Support Specialist at Bolton Partners, where I provide help desk support, manage Active Directory, and troubleshoot network issues. My previous roles at Cybrary helped solidify my skills in network checks, resolving help desk tickets, and collaborating within an IT team.
+
+            I hold certifications in both CompTIA Security+ and CCNA, and I’m continually looking for opportunities to grow my skills, especially in the fields of network engineering and cybersecurity. My goal is to build a career that bridges both technical expertise and creative problem-solving, always pushing the boundaries of what’s possible in technology.
+
+            When I’m not immersed in the world of IT, you can find me at the gym, hanging out with my dog, or enjoying a good book. I am really into books that teach technical concepts as I believe it helps to learn on your own.</p>
+            <!-- Add more detailed information about yourself here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer content, keep it consistent across all pages -->
+    </footer>
+
+    <!-- JavaScript links, if any -->
 </body>
 </html>
+
 
