@@ -1,16 +1,156 @@
 /* Correct path if style.css and space_background.jpg are in the same directory */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+main {
+    padding-bottom: 30px; /* Adjust this value as needed to ensure no overlap */
+}
 html, body {
-    color: white;
-    height: 100%; /* This ensures that both the html and body tags cover the full height of the viewport */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke; /* Light gray background for better readability */
+    background-size: cover;
+    min-height: 100vh
+    height: 100%;
 }
 
 body {
-    background-color: red;
-    background-image: url('../images/backround.jpg'); width: 100%; height: 100%;}; /* Ensure this path is correct relative to the location of the CSS file */
-    background-size: cover; /* Cover the entire viewport without repeating */
+    background-color: whitesmoke;
+    background-image: url('../images/backround.jpg'); /* Ensure this path is correct */
+    background-size: 100%; /* Cover the entire viewport without repeating */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Do not repeat the image */
-    color: white; /* Set text color to white for visibility */
+    min-height: 100vh; 
+    color: #cdf5cd; /* Set text color to black for visibility */
+    width: 100%; 
+    height: 100%;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    color: #008080;
+    font-size: 3.5em; /* Increase font size */
+    font-weight: bold; /* Make the font bolder */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* Optional: Adds a subtle shadow for depth */
+    margin-top: 0px; /* Adjusts space above the text */
+    padding-top: 20px; /* Adds padding on the top for better spacing */
+}
+
+h2, h3 {
+    color: #008080;
+    font-size: 2.5em; /* Increase font size */
+    font-weight: bold; /* Make the font bolder */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* Optional: Adds a subtle shadow for depth */
+    margin-top: 0px; /* Adjusts space above the text */
+    padding-top: 20px; /* Adds padding on the top for better spacing */
+
+}
+
+
+
+p {
+    color: #000000;
+    font-size: 1.2em;
+}
+
+button {
+    color: #008080 !important;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #cdf5cd !important; /* Button background color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #f0f0f0;
+}
+.profile-img-container {
+    background-color: #57bef3; /* Light grey background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Space between the image and the container edges */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow around the container */
+    display: inline-block; /* Aligns the block with the surrounding text or elements */
+}
+
+.profile-img {
+    width: 13%; /* Make the image fill the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Smooth rounded corners for the image itself */
+}
+.background-section {
+    background-color: rgba(255, 255, 255, 0.8); /* White background with opacity */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 20px; /* Margin around the box */
+    max-width: 80%; /* Maximum width of the box */
+    margin-left: auto; /* Centers the box horizontally */
+    margin-right: auto; /* Centers the box horizontally */
+    font-size: 1.1em; /* Slightly larger text */
+}
+
+.about-section {
+    background-color: rgba(255, 255, 255, 0.8); /* Light blue background with opacity */
+    border-radius: 15px; /* Rounded corners */
+    padding: 30px; /* Increased padding for a larger focus area */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 20px; /* Margin around the box */
+    max-width: 80%; /* Maximum width of the box */
+    margin-left: auto; /* Centers the box horizontally */
+    margin-right: auto; /* Centers the box horizontally */
+    font-size: 1.2em; /* Slightly larger text than the rest of the site */
+}
+
+
+
+.social-nav {
+    display: flex; /* This will align your nav items in a row */
+    justify-content: center; /* This will center the nav items horizontally */
+    margin-top: 20px; /* Adds space between the title and nav */
+    gap: 10px; /* Space between each link */
+}
+
+.nav-icon {
+    text-decoration: none; /* Removes underline from links */
+    padding: 10px; /* Adds padding around the text for better clickability */
+    border-radius: 50%; /* Makes the links circular */
+    background-color: #CDF5CD; /* Example background color */
+    color: #333; /* Text color */
+    display: inline-block; /* Allows applying padding and border radius */
+    width: 80px; /* Specific width for circle */
+    height: 80px; /* Specific height for circle */
+    display: flex;
+    justify-content: center; /* Center the text horizontally */
+    align-items: center; /* Center the text vertically */
+}
+
+.nav-icon:hover {
+    background-color: #eee; /* Lighter background on hover */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* Larger shadow on hover */
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0; /* Light gray background for consistency */
+    text-align: center;
+    padding: .10px 0; /* Small padding for a thin appearance */
+    font-size: 8px; /* Adjust font size for visual comfort */
+    border-top: 1px solid #ccc; /* Subtle top border for separation */
+    box-shadow: 0 -1px 2px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+footer a {
+    padding: 0 2px;
 }
