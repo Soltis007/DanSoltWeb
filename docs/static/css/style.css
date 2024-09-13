@@ -44,7 +44,7 @@ header {
 
 h1 {
     color: #008080;
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: bold;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
     margin-top: 0px;
@@ -84,6 +84,16 @@ strong {
     color: #3d965f;
     font-weight: bold;
 }
+
+.logo-img {
+    image-rendering: optimizeQuality; /* Ensures the image is rendered with higher quality */
+    image-rendering: -webkit-optimize-contrast; /* Enhance contrast and quality in WebKit browsers */
+    -webkit-font-smoothing: antialiased; /* Smoothens the text in logos that include text */
+    -moz-osx-font-smoothing: grayscale; /* Similar effect for Firefox on Mac */
+}
+
+
+
 
 .welcome-container {
     background: linear-gradient(to right, #fdfdfd, #dbffd9);
@@ -266,9 +276,14 @@ footer a {
     }
 
     .logo {
-        width: 80px; /* Smaller logo size */
+        width: 40px; /* Smaller logo size */
         position: static; /* Adjust position to default flow if necessary */
     }
+
+    
+
+
+
 
     footer {
         font-size: 0.8em; /* Smaller font size for footer on mobile */
