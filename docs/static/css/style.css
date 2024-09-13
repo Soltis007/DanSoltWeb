@@ -1,9 +1,6 @@
 /* Correct path if style.css and space_background.jpg are in the same directory */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-main {
-    padding-bottom: 30px; /* Adjust this value as needed to ensure no overlap */
-}
 html, body {
     font-family: 'Roboto', sans-serif;
     color: #333;
@@ -26,6 +23,14 @@ body {
     width: 100%; 
     height: 100%;
 }
+
+main {
+    flex: 1; /* Allows main content to expand and push the footer down */
+    width: 100%; /* Ensures main takes full width of the container */
+}
+
+
+
 header {
     display: flex;
     flex-direction: column;
@@ -37,35 +42,32 @@ header {
 
 h1 {
     color: #008080;
-    font-size: 2.5em; /* Increase font size */
-    font-weight: bold; /* Make the font bolder */
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* Optional: Adds a subtle shadow for depth */
-    margin-top: 0px; /* Adjusts space above the text */
-    padding-top: 20px; /* Adds padding on the top for better spacing */
+    font-size: 2.5em;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    margin-top: 0px;
+    padding-top: 20px;
 }
 
 h2, h3 {
     color: #008080;
-    font-size: 2.5em; /* Increase font size */
-    font-weight: bold; /* Make the font bolder */
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* Optional: Adds a subtle shadow for depth */
-    margin-top: 0px; /* Adjusts space above the text */
-    padding-top: 20px; /* Adds padding on the top for better spacing */
-
+    font-size: 2em; /* Slightly smaller for better responsiveness */
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    margin-top: 0px;
+    padding-top: 20px;
 }
-
-
 
 p {
     color: #000000;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 button {
     color: #008080 !important;
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: #cdf5cd !important; /* Button background color */
+    background-color: #cdf5cd !important;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -77,117 +79,133 @@ button:hover {
 }
 
 strong {
-    color: #3d965f; /* Set to your preferred color */
-    font-weight: bold; /* Ensures text is bold */
+    color: #3d965f;
+    font-weight: bold;
 }
 
 .welcome-container {
-    background: linear-gradient(to right, #fdfdfd, #dbffd9); /* Fancy gradient background */
-    padding: 20px; /* Spacing around the text */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
-    text-align: center; /* Center the text horizontally */
-    margin: 20px auto; /* Center the container on the page */
-    max-width: 60%; /* Maximum width of the container */
-    color: white; /* White text color */
+    background: linear-gradient(to right, #fdfdfd, #dbffd9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    margin: 20px auto;
+    max-width: 80%; /* Made it responsive by increasing width slightly */
+    color: white;
 }
-
-
-
-
 
 .bold {
     font-weight: bold;
 }
 
 .profile-img-container {
-    background-color: #57bef3; /* Light grey background */
-    border-radius: 10px; /* Rounded corners */
-    padding: 10px; /* Space between the image and the container edges */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow around the container */
-    display: inline-block; /* Aligns the block with the surrounding text or elements */
+    background-color: #57bef3;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: inline-block;
 }
 
 .profile-img {
-    width: 13%; /* Make the image fill the container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Smooth rounded corners for the image itself */
+    width: 100%; /* Full width for mobile responsiveness */
+    max-width: 200px; /* Maximum width to maintain control on desktop */
+    height: auto;
+    border-radius: 8px;
 }
-
-
 
 .logo {
-    position: absolute; /* Adjusts the positioning relative to its nearest positioned ancestor */
-    top: 10px; /* Distance from the top */
-    left: 10px; /* Distance from the left */
-    width: 100px; /* Adjust the width as necessary */
-    height: auto; /* Keeps the aspect ratio intact */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100px;
+    height: auto;
 }
 
-
 .background-section {
-    background-color: rgba(255, 255, 255, 0.8); /* White background with opacity */
-    border-radius: 15px; /* Rounded corners */
-    padding: 20px; /* Padding inside the box */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    margin: 20px; /* Margin around the box */
-    max-width: 80%; /* Maximum width of the box */
-    margin-left: auto; /* Centers the box horizontally */
-    margin-right: auto; /* Centers the box horizontally */
-    font-size: 1.1em; /* Slightly larger text */
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    max-width: 80%; /* Improved for responsiveness */
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.1em;
 }
 
 .about-section {
-    background-color: rgba(255, 255, 255, 0.8); /* Light blue background with opacity */
-    border-radius: 15px; /* Rounded corners */
-    padding: 30px; /* Increased padding for a larger focus area */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    margin: 20px; /* Margin around the box */
-    max-width: 80%; /* Maximum width of the box */
-    margin-left: auto; /* Centers the box horizontally */
-    margin-right: auto; /* Centers the box horizontally */
-    font-size: 1.2em; /* Slightly larger text than the rest of the site */
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2em;
 }
 
-
-
 .social-nav {
-    display: flex; /* This will align your nav items in a row */
-    justify-content: center; /* This will center the nav items horizontally */
-    margin-top: 20px; /* Adds space between the title and nav */
-    gap: 10px; /* Space between each link */
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
 }
 
 .nav-icon {
-    text-decoration: none; /* Removes underline from links */
-    padding: 10px; /* Adds padding around the text for better clickability */
-    border-radius: 50%; /* Makes the links circular */
-    background-color: #CDF5CD; /* Example background color */
-    color: #333; /* Text color */
-    display: inline-block; /* Allows applying padding and border radius */
-    width: 80px; /* Specific width for circle */
-    height: 80px; /* Specific height for circle */
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #CDF5CD;
+    color: #333;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
     display: flex;
-    justify-content: center; /* Center the text horizontally */
-    align-items: center; /* Center the text vertically */
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-icon:hover {
-    background-color: #eee; /* Lighter background on hover */
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* Larger shadow on hover */
+    background-color: #eee;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
+
 footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #f0f0f0; /* Light gray background for consistency */
     text-align: center;
-    padding: .10px 0; /* Small padding for a thin appearance */
-    font-size: 8px; /* Adjust font size for visual comfort */
-    border-top: 1px solid #ccc; /* Subtle top border for separation */
-    box-shadow: 0 -1px 2px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    padding: 10px 0;
 }
+
 footer a {
     padding: 0 2px;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em; /* Adjust font size for smaller screens */
+    }
+
+    h2, h3 {
+        font-size: 1.5em;
+    }
+
+    .profile-img {
+        width: 80%; /* Ensure the profile image resizes well on mobile */
+        max-width: 150px; /* Limit for smaller screens */
+    }
+
+    .welcome-container, .about-section, .background-section {
+        max-width: 95%; /* Stretch sections to use more space on mobile */
+    }
+
+    nav a {
+        margin: 0 5px;
+        font-size: 0.9em; /* Make the nav items smaller for mobile */
+    }
+
+    .nav-icon {
+        width: 60px;
+        height: 60px; /* Make nav icons smaller */
+    }
 }
