@@ -1,12 +1,12 @@
-/* Correct path if style.css and space_background.jpg are in the same directory */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 html, body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #333;
     margin: 0;
     padding: 0;
-    background-color: whitesmoke; /* Light gray background for better readability */
+    background-color: whitesmoke; 
     background-size: cover;
     min-height: 100vh
     height: 100%;
@@ -14,19 +14,19 @@ html, body {
 
 body {
     background-color: whitesmoke;
-    background-image: url('../images/backround.jpg'); /* Ensure this path is correct */
-    background-size: 100%; /* Cover the entire viewport without repeating */
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Do not repeat the image */
+    background-image: url('../images/backround.jpg'); 
+    background-size: 100%; 
+    background-position: center; 
+    background-repeat: no-repeat; 
     min-height: 100vh; 
-    color: #cdf5cd; /* Set text color to black for visibility */
+    color: #5dab5d; 
     width: 100%; 
     height: 100%;
 }
 
 main {
-    flex: 1; /* Allows main content to expand and push the footer down */
-    width: 100%; /* Ensures main takes full width of the container */
+    flex: 1; 
+    width: 100%; 
 }
 
 
@@ -53,7 +53,7 @@ h1 {
 
 h2, h3 {
     color: #008080;
-    font-size: 2em; /* Slightly smaller for better responsiveness */
+    font-size: 2em; 
     font-weight: bold;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
     margin-top: 0px;
@@ -86,10 +86,10 @@ strong {
 }
 
 .logo-img {
-    image-rendering: optimizeQuality; /* Ensures the image is rendered with higher quality */
-    image-rendering: -webkit-optimize-contrast; /* Enhance contrast and quality in WebKit browsers */
-    -webkit-font-smoothing: antialiased; /* Smoothens the text in logos that include text */
-    -moz-osx-font-smoothing: grayscale; /* Similar effect for Firefox on Mac */
+    image-rendering: optimizeQuality; 
+    image-rendering: -webkit-optimize-contrast; 
+    -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale; 
 }
 
 
@@ -102,7 +102,7 @@ strong {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     text-align: center;
     margin: 20px auto;
-    max-width: 80%; /* Made it responsive by increasing width slightly */
+    max-width: 80%; 
     color: white;
 }
 
@@ -119,8 +119,8 @@ strong {
 }
 
 .profile-img {
-    width: 100%; /* Full width for mobile responsiveness */
-    max-width: 200px; /* Maximum width to maintain control on desktop */
+    width: 100%; 
+    max-width: 200px; 
     height: auto;
     border-radius: 8px;
 }
@@ -135,7 +135,7 @@ strong {
 
 @media (max-width: 768px) {
     .logo {
-        width: 50px; /* Even smaller for very small devices */
+        width: 50px; 
     }
 }
 
@@ -146,7 +146,7 @@ strong {
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px;
-    max-width: 80%; /* Improved for responsiveness */
+    max-width: 80%; 
     margin-left: auto;
     margin-right: auto;
     font-size: 1.1em;
@@ -187,14 +187,14 @@ strong {
 
 @media (max-width: 768px) {
     .nav-icon {
-        width: 60px; /* Smaller size for mobile */
-        height: 60px; /* Smaller size for mobile */
-        font-size: 0.8em; /* Smaller font size for text within the circles */
-        margin: 2px; /* Reduced margin to fit smaller screens */
+        width: 60px; 
+        height: 60px; 
+        font-size: 0.8em; 
+        margin: 2px; 
     }
     .social-nav {
-        flex-wrap: wrap; /* Allow the nav icons to wrap if space is insufficient */
-        padding: 0 10px; /* Padding on the sides */
+        flex-wrap: wrap; 
+        padding: 0 10px; 
     }
 }
 
@@ -217,7 +217,7 @@ footer a {
 /* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {
     h1 {
-        font-size: 2em; /* Adjust font size for smaller screens */
+        font-size: 2em; 
     }
 
     h2, h3 {
@@ -225,59 +225,59 @@ footer a {
     }
 
     .profile-img {
-        width: 80%; /* Ensure the profile image resizes well on mobile */
-        max-width: 150px; /* Limit for smaller screens */
+        width: 80%; 
+        max-width: 150px; 
     }
 
     .welcome-container, .about-section, .background-section {
-        max-width: 95%; /* Stretch sections to use more space on mobile */
+        max-width: 95%; 
     }
 
     nav a {
         margin: 0 5px;
-        font-size: 0.9em; /* Make the nav items smaller for mobile */
+        font-size: 0.9em; 
     }
 
     .nav-icon {
         width: 60px;
-        height: 60px; /* Make nav icons smaller */
+        height: 60px; 
     }
 }
 
 @media (max-width: 768px) {
     body {
-        background-size: cover; /* Adjust background size for smaller screens */
+        background-size: cover; 
     }
 
     header {
-        padding: 10px; /* Reduce padding to better fit mobile screens */
+        padding: 10px; 
     }
 
     .welcome-container, .about-section, .background-section {
-        padding: 10px; /* Reduce padding for content sections */
-        margin: 10px 5px; /* Adjust margins for mobile */
-        max-width: 95%; /* Use more screen width for content */
+        padding: 10px; 
+        margin: 10px 5px; 
+        max-width: 95%; 
     }
 
     h1, h2, h3 {
-        font-size: 1.2em; /* Reduce the size of headers on small screens */
+        font-size: 1.2em; 
     }
 
     .nav-icon {
-        padding: 8px; /* Smaller padding */
-        width: 50px; /* Smaller width for icons */
-        height: 50px; /* Smaller height for icons */
-        font-size: 0.8em; /* Smaller font size for navigation texts */
+        padding: 8px; 
+        width: 50px; 
+        height: 50px; 
+        font-size: 0.8em; 
     }
 
     .profile-img {
-        width: 80%; /* Larger relative width to screen size for visibility */
-        max-width: 150px; /* Maximum width constraint for image */
+        width: 80%; 
+        max-width: 150px; 
     }
 
     .logo {
-        width: 40px; /* Smaller logo size */
-        position: static; /* Adjust position to default flow if necessary */
+        width: 40px; 
+        position: static; 
     }
 
     
@@ -286,7 +286,7 @@ footer a {
 
 
     footer {
-        font-size: 0.8em; /* Smaller font size for footer on mobile */
+        font-size: 0.8em; 
     }
 }
 
@@ -298,7 +298,7 @@ footer a {
     .welcome-container, .about-section, .background-section {
         padding: 5px;
         margin: 5px;
-        max-width: 100%; /* Use full width to avoid overflow */
+        max-width: 100%; 
     }
 }
 
