@@ -40,6 +40,8 @@ header {
     padding: 20px 0;
 }
 
+
+
 h1 {
     color: #008080;
     font-size: 2.5em;
@@ -121,6 +123,13 @@ strong {
     height: auto;
 }
 
+@media (max-width: 768px) {
+    .logo {
+        width: 50px; /* Even smaller for very small devices */
+    }
+}
+
+
 .background-section {
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 15px;
@@ -166,6 +175,21 @@ strong {
     align-items: center;
 }
 
+@media (max-width: 768px) {
+    .nav-icon {
+        width: 60px; /* Smaller size for mobile */
+        height: 60px; /* Smaller size for mobile */
+        font-size: 0.8em; /* Smaller font size for text within the circles */
+        margin: 2px; /* Reduced margin to fit smaller screens */
+    }
+    .social-nav {
+        flex-wrap: wrap; /* Allow the nav icons to wrap if space is insufficient */
+        padding: 0 10px; /* Padding on the sides */
+    }
+}
+
+
+
 .nav-icon:hover {
     background-color: #eee;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
@@ -209,3 +233,57 @@ footer a {
         height: 60px; /* Make nav icons smaller */
     }
 }
+
+@media (max-width: 768px) {
+    body {
+        background-size: cover; /* Adjust background size for smaller screens */
+    }
+
+    header {
+        padding: 10px; /* Reduce padding to better fit mobile screens */
+    }
+
+    .welcome-container, .about-section, .background-section {
+        padding: 10px; /* Reduce padding for content sections */
+        margin: 10px 5px; /* Adjust margins for mobile */
+        max-width: 95%; /* Use more screen width for content */
+    }
+
+    h1, h2, h3 {
+        font-size: 1.2em; /* Reduce the size of headers on small screens */
+    }
+
+    .nav-icon {
+        padding: 8px; /* Smaller padding */
+        width: 50px; /* Smaller width for icons */
+        height: 50px; /* Smaller height for icons */
+        font-size: 0.8em; /* Smaller font size for navigation texts */
+    }
+
+    .profile-img {
+        width: 80%; /* Larger relative width to screen size for visibility */
+        max-width: 150px; /* Maximum width constraint for image */
+    }
+
+    .logo {
+        width: 80px; /* Smaller logo size */
+        position: static; /* Adjust position to default flow if necessary */
+    }
+
+    footer {
+        font-size: 0.8em; /* Smaller font size for footer on mobile */
+    }
+}
+
+@media (max-width: 768px) {
+    body, header, main {
+        padding: 5px;
+    }
+
+    .welcome-container, .about-section, .background-section {
+        padding: 5px;
+        margin: 5px;
+        max-width: 100%; /* Use full width to avoid overflow */
+    }
+}
+
