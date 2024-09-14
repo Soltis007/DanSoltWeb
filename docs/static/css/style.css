@@ -184,17 +184,27 @@ strong {
             margin-right: 10px;    
         }
 
+@media (max-width: 768px) { 
+    .cert-logo {
+        width: 60px; 
+        height: auto; 
+        margin-right: 5px; 
+    }
+}
+
+
+
 .cert-logo {
-    width: 120px; /* You can adjust this size */
-    height: auto; /* Keeps the aspect ratio intact */
-    margin-right: 10px; /* Space between logo and header text */
+    width: 120px; 
+    height: auto; 
+    margin-right: 10px; 
     vertical-align: middle;
 }
 
 .ccna-logo {
-    width: 150px; /* You can adjust this size */
-    height: auto; /* Keeps the aspect ratio intact */
-    margin-right: 10px; /* Space between logo and header text */
+    width: 150px; 
+    height: auto; 
+    margin-right: 10px; 
     vertical-align: middle;
 }
 
@@ -251,7 +261,7 @@ footer a {
     padding: 0 2px;
 }
 
-/* Media Queries for Mobile Responsiveness */
+
 @media (max-width: 768px) {
     h1 {
         font-size: 2em; 
