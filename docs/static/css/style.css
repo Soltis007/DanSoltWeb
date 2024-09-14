@@ -164,6 +164,43 @@ strong {
     font-size: 1.2em;
 }
 
+
+.header-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2em;
+
+}
+
+.terp-logo {
+            width: 120px;           
+            height: auto;         
+            margin-right: 10px;    
+        }
+
+.cert-logo {
+    width: 120px; /* You can adjust this size */
+    height: auto; /* Keeps the aspect ratio intact */
+    margin-right: 10px; /* Space between logo and header text */
+    vertical-align: middle;
+}
+
+.ccna-logo {
+    width: 150px; /* You can adjust this size */
+    height: auto; /* Keeps the aspect ratio intact */
+    margin-right: 10px; /* Space between logo and header text */
+    vertical-align: middle;
+}
+
+
+
+
 .social-nav {
     display: flex;
     justify-content: center;
